@@ -33,7 +33,7 @@ Outputs:
 
 ---
 
-## Why this is useful (Prof. Kim-style)
+## Why this is useful
 
 This repo shows you can:
 - design **clean evaluation protocols**
