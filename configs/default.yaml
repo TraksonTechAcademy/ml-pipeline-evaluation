@@ -1,0 +1,24 @@
+seed: 42
+
+data:
+  dataset: "breast_cancer"   # built-in sklearn dataset
+  test_size: 0.2
+  val_size: 0.2              # split from train portion
+
+pipeline:
+  scaler: "standard"         # standard | minmax | none
+  model: "logreg"            # logreg | rf
+  logreg:
+    C: 1.0
+    max_iter: 500
+  rf:
+    n_estimators: 300
+    max_depth: null
+
+metrics:
+  primary: "f1"
+  report: ["accuracy", "precision", "recall", "f1", "roc_auc"]
+
+output:
+  runs_dir: "./runs"
+  artifacts_dir: "./artifacts"
